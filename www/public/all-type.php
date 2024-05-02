@@ -1,10 +1,8 @@
-<h1>Liste des articles</h1>
+<h1 class="text-success my-3">Liste des articles</h1>
 
 <ul class="list-group bg-white d-flex flex-row flex-wrap justify-content-around">
 
 <?php
- 
-
 
 if($encoded=json_decode($result[0],true))
 {
@@ -27,16 +25,11 @@ if($encoded=json_decode($result[0],true))
     //echo $nbArticles;
   }
 
-   
-  //print_r($encoded);
    // On détermine le nombre d'articles par page
     $parPage = 10;
 
     // On calcule le nombre de pages total
     $pages = ceil($nbArticles / $parPage);
-
-    
- 
 
     // Calcul du 1er article de la page
     $premier = ($currentPage * $parPage) - $parPage;
@@ -51,14 +44,10 @@ if($encoded=json_decode($result[0],true))
   }
   
 }  
-
-  
  
 ?>
 </ul>
-      
-
-<!-- pagination - bas -->
+<!-- pagination -->
 <div>
   <ul class="pagination pagination-sm justify-content-center">
       <!-- Lien vers la page précédente (désactivé si on se trouve sur la 1ère page) -->
@@ -82,4 +71,4 @@ if($encoded=json_decode($result[0],true))
       </li>
   </ul>
 </div>
-<!-- fin pagination bas -->
+<!-- fin pagination -->

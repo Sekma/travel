@@ -1,7 +1,4 @@
-
-
 <?php
-
 
 if($encoded=json_decode($result[0],true))
 {
@@ -16,19 +13,29 @@ function filter_callback_room($element) {
 $room_array = array_filter($encoded, 'filter_callback_room');
 //echo "room: ".count($room_array);
 
+if(isset($_GET['min'])&&isset($_GET['max'])){
+  function filter_callback_range($element) {
+    if (isset($element['price']) && $element['price'] >= $_GET['min'] && $element['price'] <= $_GET['max']) {
+      return TRUE;
+    }
+    return FALSE;
+  }
+  $room_array = array_filter($room_array, 'filter_callback_range');
 
+   // On détermine le nombre total d'articles
+   $nbRooms = count($room_array);
+  
+}else{
+  // On détermine le nombre total d'articles
+  $nbRooms = count($room_array);
+  
+}
 
-// On détermine le nombre total d'articles
-$nbRooms = count($room_array);
-//echo $nbRooms;
-   
-  //print_r($encoded);
    // On détermine le nombre d'articles par page
     $parPage = 10;
 
     // On calcule le nombre de pages total
     $pages = ceil($nbRooms / $parPage);
-
 
     // Calcul du 1er article de la page
     $premier = ($currentPage * $parPage) - $parPage;
@@ -36,7 +43,8 @@ $nbRooms = count($room_array);
     // splice them according to offset and limit
     $final = array_splice($room_array, $premier, $parPage);
     ?>
-<h1><?= $final[0]['room_type'] ?></h1>
+
+<h1 class="text-success my-3"><?= $final[0]['room_type'] ?></h1>
 
 <ul class="list-group bg-white d-flex flex-row flex-wrap justify-content-around">
     <?php
@@ -46,14 +54,12 @@ $nbRooms = count($room_array);
         include 'show.php';
      
     } 
-    //range des prix
-  
 }  
+
 ?>
 </ul>
       
-
-<!-- pagination - bas -->
+<!-- pagination -->
 <div>
   <ul class="pagination pagination-sm justify-content-center">
       <!-- Lien vers la page précédente (désactivé si on se trouve sur la 1ère page) -->
@@ -77,4 +83,4 @@ $nbRooms = count($room_array);
       </li>
   </ul>
 </div>
-<!-- fin pagination bas -->
+<!-- fin pagination -->
