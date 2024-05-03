@@ -5,8 +5,8 @@ Travel est un catalogue contient une liste des chambres hotel, avec tous les det
 ## Page d'accueil
 La page d'accueil de cette application nous affiche la liste comptète des chambre:<br><br>
 <div display:inline-block>
-    <img src="https://github.com/Sekma/travel/blob/main/image/all-type.jpeg" width="45%" alt="">
-    <img src="https://github.com/Sekma/travel/blob/main/image/mobile-version.jpeg" height="100%" width="15%" align=right alt="">
+    <img src="https://github.com/Sekma/travel/blob/main/image/all-type.jpeg" width="50%" alt="">
+    <img src="https://github.com/Sekma/travel/blob/main/image/mobile-version.jpeg" height="100%" width="15%" align=center alt="">
 </div><br><br>
 
 ## Genre
