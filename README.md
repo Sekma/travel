@@ -3,7 +3,8 @@
 # Travel
 Travel est un catalogue contient une liste des chambres hotel, avec tous les details: region, type, nombre de voyageurs, les avis des visiteurs, nombre minimal des nuitées pour la reservation, prix par nuit, etc.. .<br><br>
 ## Page d'accueil
-La page d'accueil de cette application nous affiche la liste comptète des chambre:<br><br>
+La page d'accueil de cette application nous affiche la liste comptète des chambre..<br>
+L'application est adaptable sur tous les supports.<br><br>
 <div display:inline-block>
     <img src="https://github.com/Sekma/travel/blob/main/image/all-type.jpeg" width="50%" alt="">
     <img src="https://github.com/Sekma/travel/blob/main/image/mobile-version.jpeg" height="100%" width="15%" align="right" alt="">
