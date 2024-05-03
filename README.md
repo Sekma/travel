@@ -19,6 +19,19 @@ On peut afficher les chambres par genre, en choisissant le genre et en cliquant 
 </div><br><br>
 
 ## Price
-Pour filtrer la liste des chambres affichées, vous mettez un prix MIN et un prix MAX dans les champs de formulaire à droite de la barre de navigation, puis vous cliquez sue "Search".<br><br>
+Pour filtrer la liste des chambres affichées, vous mettez un prix MIN et un prix MAX dans les champs de formulaire à droite de la barre de navigation, puis vous cliquez sur "Search".<br><br>
 <img src="https://github.com/Sekma/travel/blob/main/image/search.jpeg" width="45%" alt=""><br><br>
 
+# Fabriqué avec
+<div style="display: inline_block"><br>
+  <img align="center" alt="Rafa-HTML" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Rafa-CSS" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="Rafa-Bootstrap" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
+  <img align="center" alt="Rafa-php" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
+  <img align="center" alt="Rafa-redis" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg">  
+  <img align="center" alt="Rafa-docker" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
+  <img align="center" alt="Rafa-vscode" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg">
+</div><br><hr>
+
+# Auteur
+- Sekma Mohamed Hedi <a href="https://github.com/Sekma">@Sekma<a/>
